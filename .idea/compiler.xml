@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="shop-entity" />
+        <module name="shop-service" />
+        <module name="shop-api" />
+        <module name="shop-basic" />
+        <module name="shop-eureka-server" />
+        <module name="shop-mapper" />
+        <module name="shop-web" />
+        <module name="shop-dependencies" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="shop-api" target="1.5" />
+      <module name="shop-basic" target="1.8" />
+      <module name="shop-common" target="1.5" />
+      <module name="shop-dependencies" target="1.8" />
+      <module name="shop-entity" target="1.8" />
+      <module name="shop-eureka-server" target="1.8" />
+      <module name="shop-mapper" target="1.8" />
+      <module name="shop-service" target="1.8" />
+      <module name="shop-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="shop-basic" options="-parameters" />
+      <module name="shop-dependencies" options="-parameters" />
+      <module name="shop-entity" options="-parameters" />
+      <module name="shop-eureka-server" options="-parameters" />
+      <module name="shop-mapper" options="-parameters" />
+      <module name="shop-service" options="-parameters" />
+      <module name="shop-web" options="-parameters" />
+    </option>
+  </component>
+</project>
