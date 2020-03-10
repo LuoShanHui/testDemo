@@ -15,6 +15,8 @@
         <option value="$PROJECT_DIR$/shop-common/shop-mapper/pom.xml" />
         <option value="$PROJECT_DIR$/shop-dependencies/pom.xml" />
         <option value="$PROJECT_DIR$/shop-email-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-regist-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-regist-web/pom.xml" />
       </list>
     </option>
   </component>

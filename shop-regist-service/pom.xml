@@ -10,14 +10,13 @@
         <version>1.0.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>shop-service</artifactId>
+    <artifactId>shop-regist-service</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>shop-service</name>
+    <name>shop-regist-service</name>
     <description>Demo project for Spring Boot</description>
 
 
     <dependencies>
-
         <dependency>
             <groupId>com.qf</groupId>
             <artifactId>shop-entity</artifactId>

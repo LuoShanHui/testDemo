@@ -7,17 +7,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="shop-entity" />
+        <module name="shop-regist-web" />
         <module name="shop-basic" />
         <module name="shop-service" />
         <module name="shop-email-service" />
         <module name="shop-api" />
+        <module name="shop" />
         <module name="shop-eureka-server" />
+        <module name="shop-regist-service" />
         <module name="shop-mapper" />
         <module name="shop-web" />
         <module name="shop-dependencies" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="shop" target="1.5" />
       <module name="shop-api" target="1.5" />
       <module name="shop-basic" target="1.8" />
       <module name="shop-common" target="1.5" />
@@ -26,6 +30,8 @@
       <module name="shop-entity" target="1.8" />
       <module name="shop-eureka-server" target="1.8" />
       <module name="shop-mapper" target="1.8" />
+      <module name="shop-regist-service" target="1.8" />
+      <module name="shop-regist-web" target="1.8" />
       <module name="shop-service" target="1.8" />
       <module name="shop-web" target="1.8" />
     </bytecodeTargetLevel>
@@ -38,6 +44,8 @@
       <module name="shop-entity" options="-parameters" />
       <module name="shop-eureka-server" options="-parameters" />
       <module name="shop-mapper" options="-parameters" />
+      <module name="shop-regist-service" options="-parameters" />
+      <module name="shop-regist-web" options="-parameters" />
       <module name="shop-service" options="-parameters" />
       <module name="shop-web" options="-parameters" />
     </option>

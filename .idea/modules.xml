@@ -10,6 +10,8 @@
       <module fileurl="file://$PROJECT_DIR$/shop-common/shop-entity/shop-entity.iml" filepath="$PROJECT_DIR$/shop-common/shop-entity/shop-entity.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop-eureka-server/shop-eureka-server.iml" filepath="$PROJECT_DIR$/shop-eureka-server/shop-eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop-common/shop-mapper/shop-mapper.iml" filepath="$PROJECT_DIR$/shop-common/shop-mapper/shop-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-regist-service/shop-regist-service.iml" filepath="$PROJECT_DIR$/shop-regist-service/shop-regist-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-regist-web/shop-regist-web.iml" filepath="$PROJECT_DIR$/shop-regist-web/shop-regist-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop-service/shop-service.iml" filepath="$PROJECT_DIR$/shop-service/shop-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop-web/shop-web.iml" filepath="$PROJECT_DIR$/shop-web/shop-web.iml" />
     </modules>
