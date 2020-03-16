@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface SearchService {
 
     @RequestMapping("search/query")
-     String searchByKeyword(@PathVariable String keyword);
+     ResultBean searchByKeyword(@PathVariable String keyword);
 
     @RequestMapping("search/addProduct")
     ResultBean addProduct(@PathVariable Long pid);
