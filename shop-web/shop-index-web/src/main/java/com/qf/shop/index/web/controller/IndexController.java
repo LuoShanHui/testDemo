@@ -8,7 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,7 +39,14 @@ public class IndexController {
         return "index";
     }
 
-    public ResultBean checkIsLogin(){
+    /**
+     * 检查是否已登录
+     * @param uuid
+     * @return
+     */
+    @RequestMapping("checkIsLogin")
+    @ResponseBody
+    public ResultBean checkIsLogin(@CookieValue(name = RedisConstant.USER_LOGIN_PRE,required = false) String uuid){
         return  null;
     }
 
