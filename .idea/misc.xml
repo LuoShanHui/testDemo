@@ -15,9 +15,18 @@
         <option value="$PROJECT_DIR$/shop-common/shop-mapper/pom.xml" />
         <option value="$PROJECT_DIR$/shop-dependencies/pom.xml" />
         <option value="$PROJECT_DIR$/shop-email-service/pom.xml" />
-        <option value="$PROJECT_DIR$/shop-regist-service/pom.xml" />
         <option value="$PROJECT_DIR$/shop-regist-web/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-regist-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-web/shop-regist-web/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-service/shop-regist-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-service/shop-email-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-service/shop-login-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-web/shop-login-web/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-web/shop-index-web/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-service/shop-phone-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-service/shop-index-service/pom.xml" />
       </list>
     </option>
   </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_13" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
 </project>

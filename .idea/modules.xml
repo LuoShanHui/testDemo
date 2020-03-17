@@ -6,12 +6,17 @@
       <module fileurl="file://$PROJECT_DIR$/shop-common/shop-basic/shop-basic.iml" filepath="$PROJECT_DIR$/shop-common/shop-basic/shop-basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop-common/shop-common.iml" filepath="$PROJECT_DIR$/shop-common/shop-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop-dependencies/shop-dependencies.iml" filepath="$PROJECT_DIR$/shop-dependencies/shop-dependencies.iml" />
-      <module fileurl="file://$PROJECT_DIR$/shop-email-service/shop-email-service.iml" filepath="$PROJECT_DIR$/shop-email-service/shop-email-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-service/shop-email-service/shop-email-service.iml" filepath="$PROJECT_DIR$/shop-service/shop-email-service/shop-email-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop-common/shop-entity/shop-entity.iml" filepath="$PROJECT_DIR$/shop-common/shop-entity/shop-entity.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop-eureka-server/shop-eureka-server.iml" filepath="$PROJECT_DIR$/shop-eureka-server/shop-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-service/shop-index-service/shop-index-service.iml" filepath="$PROJECT_DIR$/shop-service/shop-index-service/shop-index-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-web/shop-index-web/shop-index-web.iml" filepath="$PROJECT_DIR$/shop-web/shop-index-web/shop-index-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-service/shop-login-service/shop-login-service.iml" filepath="$PROJECT_DIR$/shop-service/shop-login-service/shop-login-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-web/shop-login-web/shop-login-web.iml" filepath="$PROJECT_DIR$/shop-web/shop-login-web/shop-login-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop-common/shop-mapper/shop-mapper.iml" filepath="$PROJECT_DIR$/shop-common/shop-mapper/shop-mapper.iml" />
-      <module fileurl="file://$PROJECT_DIR$/shop-regist-service/shop-regist-service.iml" filepath="$PROJECT_DIR$/shop-regist-service/shop-regist-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/shop-regist-web/shop-regist-web.iml" filepath="$PROJECT_DIR$/shop-regist-web/shop-regist-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-service/shop-phone-service/shop-phone-service.iml" filepath="$PROJECT_DIR$/shop-service/shop-phone-service/shop-phone-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-service/shop-regist-service/shop-regist-service.iml" filepath="$PROJECT_DIR$/shop-service/shop-regist-service/shop-regist-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-web/shop-regist-web/shop-regist-web.iml" filepath="$PROJECT_DIR$/shop-web/shop-regist-web/shop-regist-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop-service/shop-service.iml" filepath="$PROJECT_DIR$/shop-service/shop-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop-web/shop-web.iml" filepath="$PROJECT_DIR$/shop-web/shop-web.iml" />
     </modules>

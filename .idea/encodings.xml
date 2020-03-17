@@ -5,10 +5,18 @@
     <file url="file://$PROJECT_DIR$/shop-common/shop-entity/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-common/shop-mapper/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-dependencies/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/shop-email-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/shop-eureka-server/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/shop-regist-service/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/shop-regist-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service/shop-email-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service/shop-email-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service/shop-index-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service/shop-login-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service/shop-phone-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service/shop-regist-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-service/shop-regist-service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-web/shop-index-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-web/shop-login-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-web/shop-regist-web/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/shop-web/shop-regist-web/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
