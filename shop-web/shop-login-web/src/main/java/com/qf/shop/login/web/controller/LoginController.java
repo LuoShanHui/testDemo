@@ -10,6 +10,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
@@ -60,5 +61,10 @@ public class LoginController {
         return "redirect:showLogin";
     }
 
+    @RequestMapping("checkIsLogin")
+    @ResponseBody
+    public ResultBean checkIsLogin(@CookieValue(name = "user_login",required = false) String uuid){
+        return service.checkIsLogin(uuid);
+    }
 
 }

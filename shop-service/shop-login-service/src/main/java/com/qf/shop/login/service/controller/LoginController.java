@@ -23,4 +23,8 @@ public class LoginController {
         return service.checkLogin(uname,password);
     }
 
+    @RequestMapping("checkIsLogin")
+    public ResultBean checkIsLogin(String uuid){
+        return service.checkIsLogin(uuid);
+    }
 }

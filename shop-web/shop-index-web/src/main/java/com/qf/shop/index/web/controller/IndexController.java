@@ -1,9 +1,12 @@
 package com.qf.shop.index.web.controller;
 
+import com.google.gson.Gson;
 import com.qf.constant.RedisConstant;
 import com.qf.dto.ResultBean;
 import com.qf.entity.TProductType;
 import com.qf.shop.index.web.service.IndexService;
+import com.qf.util.HttpClientUtils;
+import com.qf.util.RedisUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Controller;
@@ -46,8 +49,20 @@ public class IndexController {
      */
     @RequestMapping("checkIsLogin")
     @ResponseBody
-    public ResultBean checkIsLogin(@CookieValue(name = RedisConstant.USER_LOGIN_PRE,required = false) String uuid){
-        return  null;
+    public ResultBean checkIsLogin(@CookieValue(name = "user_login",required = false) String uuid){
+        //携带cookie访问登录的web层,检查是否已登录
+        String url="http://localhost:7764/user/checkIsLogin";
+
+        //生成cookie: user_login=uuid
+        String cookie=new StringBuilder().append("user_login").append("=").append(uuid).toString();
+        //借用工具类向目标发送带cookie的请求,返回json数据结果
+        String result = HttpClientUtils.doGet(url, cookie);
+
+        //把result字符串封装成ResultBean对象,要引入gson依赖
+        Gson gson=new Gson();
+        ResultBean resultBean = gson.fromJson(result, ResultBean.class);
+
+        return  resultBean;
     }
 
 }

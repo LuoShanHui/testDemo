@@ -8,4 +8,6 @@ import com.qf.dto.ResultBean;
  */
 public interface IUserService {
     ResultBean checkLogin(String uname, String password);
+
+    ResultBean checkIsLogin(String uuid);
 }
