@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="shop-login-web" />
+        <module name="shop-back-service" />
         <module name="shop-regist-web" />
         <module name="shop-phone-service" />
         <module name="shop-login-service" />
@@ -15,19 +16,22 @@
         <module name="shop-eureka-server" />
         <module name="shop-entity" />
         <module name="shop-regist-service" />
-        <module name="shop-index-web" />
-        <module name="shop-dependencies" />
         <module name="shop-index-service" />
-        <module name="shop-basic" />
         <module name="shop-mapper" />
-        <module name="shop-web" />
         <module name="shop-api" />
         <module name="shop" />
+        <module name="shop-web" />
+        <module name="shop-back-web" />
+        <module name="shop-dependencies" />
+        <module name="shop-index-web" />
+        <module name="shop-basic" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="shop" target="1.5" />
       <module name="shop-api" target="1.5" />
+      <module name="shop-back-service" target="1.8" />
+      <module name="shop-back-web" target="1.8" />
       <module name="shop-basic" target="1.8" />
       <module name="shop-common" target="1.5" />
       <module name="shop-dependencies" target="1.8" />
@@ -48,6 +52,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="shop-back-service" options="-parameters" />
+      <module name="shop-back-web" options="-parameters" />
       <module name="shop-basic" options="-parameters" />
       <module name="shop-dependencies" options="-parameters" />
       <module name="shop-email-service" options="-parameters" />

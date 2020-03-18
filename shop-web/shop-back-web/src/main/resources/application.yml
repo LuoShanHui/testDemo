@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: back-web
+  redis:
+    host: 192.168.255.131
+    port: 6379
+    #   password: java1908
+    jedis:
+      pool:
+        max-active: 20
+
+server:
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

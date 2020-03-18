@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/myteam-shop.iml" filepath="$PROJECT_DIR$/.idea/myteam-shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-service/shop-back-service/shop-back-service.iml" filepath="$PROJECT_DIR$/shop-service/shop-back-service/shop-back-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/shop-web/shop-back-web/shop-back-web.iml" filepath="$PROJECT_DIR$/shop-web/shop-back-web/shop-back-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop-common/shop-basic/shop-basic.iml" filepath="$PROJECT_DIR$/shop-common/shop-basic/shop-basic.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop-common/shop-common.iml" filepath="$PROJECT_DIR$/shop-common/shop-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/shop-dependencies/shop-dependencies.iml" filepath="$PROJECT_DIR$/shop-dependencies/shop-dependencies.iml" />

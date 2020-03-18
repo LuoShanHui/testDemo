@@ -16,21 +16,11 @@
     <result column="update_user" jdbcType="BIGINT" property="updateUser" />
   </resultMap>
   <sql id="Base_Column_List">
-    pid, pname, price, sale_price, type_id, status, pimage, flag, create_time, update_time,
+    pid, pname, price, sale_price, type_id, status, pimage, flag, create_time, update_time, 
     create_user, update_user
   </sql>
-
-  <select id="selectAll"  resultMap="BaseResultMap">
-    select
-    <include refid="Base_Column_List" />
-    from t_product
-    where flag = 1
-  </select>
-
-
-
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
-    select
+    select 
     <include refid="Base_Column_List" />
     from t_product
     where pid = #{pid,jdbcType=BIGINT}
@@ -39,19 +29,19 @@
     delete from t_product
     where pid = #{pid,jdbcType=BIGINT}
   </delete>
-  <insert id="insert" parameterType="com.qf.entity.TProduct" useGeneratedKeys="true" keyProperty="pid">
-    insert into t_product (pid, pname, price,
-      sale_price, type_id, status,
-      pimage, flag, create_time,
+  <insert id="insert" parameterType="com.qf.entity.TProduct">
+    insert into t_product (pid, pname, price, 
+      sale_price, type_id, status, 
+      pimage, flag, create_time, 
       update_time, create_user, update_user
       )
-    values (#{pid,jdbcType=BIGINT}, #{pname,jdbcType=VARCHAR}, #{price,jdbcType=DECIMAL},
-      #{salePrice,jdbcType=DECIMAL}, #{typeId,jdbcType=BIGINT}, #{status,jdbcType=TINYINT},
-      #{pimage,jdbcType=VARCHAR}, #{flag,jdbcType=TINYINT}, #{createTime,jdbcType=TIMESTAMP},
+    values (#{pid,jdbcType=BIGINT}, #{pname,jdbcType=VARCHAR}, #{price,jdbcType=DECIMAL}, 
+      #{salePrice,jdbcType=DECIMAL}, #{typeId,jdbcType=BIGINT}, #{status,jdbcType=TINYINT}, 
+      #{pimage,jdbcType=VARCHAR}, #{flag,jdbcType=TINYINT}, #{createTime,jdbcType=TIMESTAMP}, 
       #{updateTime,jdbcType=TIMESTAMP}, #{createUser,jdbcType=BIGINT}, #{updateUser,jdbcType=BIGINT}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.qf.entity.TProduct" useGeneratedKeys="true" keyProperty="pid">
+  <insert id="insertSelective" parameterType="com.qf.entity.TProduct">
     insert into t_product
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="pid != null">
@@ -69,24 +59,27 @@
       <if test="typeId != null">
         type_id,
       </if>
-
+      <if test="status != null">
         status,
-
+      </if>
       <if test="pimage != null">
         pimage,
       </if>
-
+      <if test="flag != null">
         flag,
-
-
+      </if>
+      <if test="createTime != null">
         create_time,
-
+      </if>
+      <if test="updateTime != null">
         update_time,
-
+      </if>
+      <if test="createUser != null">
         create_user,
-
+      </if>
+      <if test="updateUser != null">
         update_user,
-
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
       <if test="pid != null">
@@ -104,15 +97,27 @@
       <if test="typeId != null">
         #{typeId,jdbcType=BIGINT},
       </if>
-     1,
+      <if test="status != null">
+        #{status,jdbcType=TINYINT},
+      </if>
       <if test="pimage != null">
         #{pimage,jdbcType=VARCHAR},
       </if>
-      1,
-      now(),
-      now(),
-      1,
-      1
+      <if test="flag != null">
+        #{flag,jdbcType=TINYINT},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUser != null">
+        #{createUser,jdbcType=BIGINT},
+      </if>
+      <if test="updateUser != null">
+        #{updateUser,jdbcType=BIGINT},
+      </if>
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.qf.entity.TProduct">
@@ -160,13 +165,20 @@
       price = #{price,jdbcType=DECIMAL},
       sale_price = #{salePrice,jdbcType=DECIMAL},
       type_id = #{typeId,jdbcType=BIGINT},
-      status = 1,
+      status = #{status,jdbcType=TINYINT},
       pimage = #{pimage,jdbcType=VARCHAR},
-      flag = 1,
-      create_time = now(),
-      update_time = now(),
-      create_user = 1,
-      update_user = 1
+      flag = #{flag,jdbcType=TINYINT},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP},
+      create_user = #{createUser,jdbcType=BIGINT},
+      update_user = #{updateUser,jdbcType=BIGINT}
     where pid = #{pid,jdbcType=BIGINT}
   </update>
+
+  <select id="selectAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List"/>
+    from t_product
+    where flag=1
+  </select>
 </mapper>

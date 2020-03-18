@@ -3,6 +3,7 @@ package com.qf.shop.index.web.controller;
 import com.google.gson.Gson;
 import com.qf.constant.RedisConstant;
 import com.qf.dto.ResultBean;
+import com.qf.entity.TProduct;
 import com.qf.entity.TProductType;
 import com.qf.shop.index.web.service.IndexService;
 import com.qf.util.HttpClientUtils;
@@ -34,11 +35,19 @@ public class IndexController {
     @RequestMapping({"","index"})
     public String showIndex(Model model){
         ResultBean resultBean = service.setIndex();
+        //商品类别集合
         List<TProductType> productTypes=new ArrayList<>();
+        //商品集合
+        List<TProduct> productList=new ArrayList<>();
         if(resultBean.getErrno()==0){
          productTypes=redisTemplate.opsForList().range(RedisConstant.INDEX_SET_PRODUCT_TYPE, 0, -1);
+         productList=redisTemplate.opsForList().range(RedisConstant.INDEX_SET_PRODUCT, 0, -1);
         }
+
         model.addAttribute("types",productTypes.get(0) );
+        //将商品集合传到前端去
+        //model.addAttribute("productList",productList.get(0));
+
         return "index";
     }
 

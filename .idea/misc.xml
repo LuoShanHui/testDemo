@@ -25,6 +25,8 @@
         <option value="$PROJECT_DIR$/shop-web/shop-index-web/pom.xml" />
         <option value="$PROJECT_DIR$/shop-service/shop-phone-service/pom.xml" />
         <option value="$PROJECT_DIR$/shop-service/shop-index-service/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-web/shop-back-web/pom.xml" />
+        <option value="$PROJECT_DIR$/shop-service/shop-back-service/pom.xml" />
       </list>
     </option>
   </component>
