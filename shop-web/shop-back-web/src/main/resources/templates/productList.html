@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>商品列表</title>
+
+</head>
+<body>
+<table class="table">
+    <thead>
+    <tr>
+        <th> 编号</th>
+        <th> 商品名称</th>
+        <th> 商品创建时间</th>
+        <th> 有效性 </th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="product:${productList}" >
+        <td th:text="${product.pid}">1001</td>
+        <td th:text="${product.pname}">test</td>
+<!--        <td ><span th:text="${#dates.format(product.createTime,'yyyy-MM-dd HH:mm:ss')}">04/04/2012 </span></td>-->
+        <td th:text="${product.createTime}">04/04/2012</td>
+        <td th:text="${product.flag eq 1 ? '有效':'无效'}">Call in to confirm</td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

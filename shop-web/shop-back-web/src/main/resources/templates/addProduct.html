@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>添加商品</title>
+    <link href="http://cdn.staticfile.org/twitter-bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <h3 class="text-info text-left"> 添加商品 </h3>
+            <form role="form" method="post" action="/back/add">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">商品名称</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" name="pname"/>
+
+                </div>
+                <div class="form-group">
+                    <label>商品价格</label>
+                    <input th:type="'text'" class="form-control" name="price"/>
+                </div>
+                <div class="form-group">
+                    <label >类型</label>
+                    <select name="typeId">
+                        <option >456</option>
+                        <option selected>15</option>
+                        <option >987</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputFile">商品图片</label>
+                    <input type="file" id="exampleInputFile"/>
+                    <p class="help-block">
+                        pname,price,sale_pric,type_id,pimage,
+                    </p>
+                </div>
+                <button type="submit" class="btn btn-default">添加商品</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
