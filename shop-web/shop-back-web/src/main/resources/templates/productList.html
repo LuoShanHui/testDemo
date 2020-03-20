@@ -13,15 +13,25 @@
         <th> 商品名称</th>
         <th> 商品创建时间</th>
         <th> 有效性 </th>
+        <th> 操作</th>
     </tr>
     </thead>
     <tbody>
     <tr th:each="product:${productList}" >
-        <td th:text="${product.pid}">1001</td>
+        <td th:text="${product.pid}" >1001</td>
         <td th:text="${product.pname}">test</td>
 <!--        <td ><span th:text="${#dates.format(product.createTime,'yyyy-MM-dd HH:mm:ss')}">04/04/2012 </span></td>-->
         <td th:text="${product.createTime}">04/04/2012</td>
         <td th:text="${product.flag eq 1 ? '有效':'无效'}">Call in to confirm</td>
+        <td >
+            <a th:href='@{/teamDynamics/getTeamDynamicsDetail(newId=${dynamicsPre.getId()})}'>
+                <span th:text="${dynamicsPre.getDynamicsLable()}"></span>
+            </a>
+
+            <a th:href='@{/teamDynamics/getTeamDynamicsDetail(newId=${product.pid})}'>修改</a>
+            &nbsp;&nbsp;
+            <a href="#">删除</a>
+        </td>
     </tr>
     </tbody>
 </table>

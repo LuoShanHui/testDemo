@@ -45,6 +45,14 @@ public class BackController {
         return "backIndex";
     }
 
+    @RequestMapping("toUpdateProduct")
+    public String toUpdateProduct(Long pid,Model model){
+        ResultBean resultBean = service.findProductById(pid);
+        TProduct product= (TProduct) resultBean.getData();
+        model.addAttribute("product", product);
+        return "updateProduct";
+    }
+
     @RequestMapping("updateProduct")
     public ResultBean updateProduct(TProduct product) {
         return service.updateProduct(product);

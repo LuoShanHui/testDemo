@@ -56,6 +56,11 @@ public class BackController {
         return resultBean;
     }
 
+    @RequestMapping("findProductById")
+    public ResultBean findProductById(Long id){
+        return service.findProductById(id);
+    }
+
     /**
      * 修改商品
      *

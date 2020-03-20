@@ -21,6 +21,9 @@ public interface IBackService {
     @RequestMapping(value = "back/addProduct", method = RequestMethod.POST)
     ResultBean addProduct(@RequestBody TProduct product);
 
+    @RequestMapping("back/findProductById")
+    ResultBean findProductById(@RequestParam Long id);
+
     @RequestMapping(value = "back/updateProduct",method = RequestMethod.POST)
     ResultBean updateProduct(@RequestBody TProduct product);
 

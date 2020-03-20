@@ -45,7 +45,7 @@ public class BackServiceImpl implements IBackService {
 
     @Override
     public ResultBean deleteProduct(Long id) {
-        TProduct product=new TProduct();
+        TProduct product = new TProduct();
         product.setPid(id);
         product.setFlag((byte) 0);
         int result = mapper.updateByPrimaryKeySelective(product);
@@ -53,6 +53,15 @@ public class BackServiceImpl implements IBackService {
             return ResultBean.success("删除成功");
         }
         return ResultBean.error("删除失败");
+    }
+
+    @Override
+    public ResultBean findProductById(Long id) {
+        TProduct product = mapper.selectByPrimaryKey(id);
+        if (product != null) {
+            return ResultBean.success(product, "查询成功");
+        }
+        return ResultBean.error();
     }
 
 

@@ -19,4 +19,6 @@ public interface IBackService {
     ResultBean updateProduct(TProduct product);
 
     ResultBean deleteProduct(Long id);
+
+    ResultBean findProductById(Long id);
 }
